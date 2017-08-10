@@ -36,7 +36,7 @@ $page[ 'body' ] .= "
 	<h1>Vulnerability: Reflected Cross Site Scripting (XSS)</h1>
 
 	<div class=\"vulnerable_code_area\">
-		<form name=\"XSS\" action=\"#\" method=\"GET\">
+		<form name=\"XSS\" method=\"GET\">
 			<p>
 				What's your name?
 				<input type=\"text\" name=\"name\">
