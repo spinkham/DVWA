@@ -54,8 +54,12 @@ if( $vulnerabilityFile == 'high.php' ) {
 	$page[ 'body' ] .= "Click <a href=\"#\" onClick=\"javascript:popUp('session-input.php');return false;\">here to change your ID</a>.";
 }
 else {
+	if( $vulnerabilityFile == 'low.php' ) {
+		$page[ 'body' ] .= "\n Hello user! You are authorized to see info for users 1 and 2, please use the form below to input which you would like to see.";
+	}
+
 	$page[ 'body' ] .= "
-		<form action=\"#\" method=\"{$method}\">
+		<form method=\"{$method}\">
 			<p>
 				User ID:";
 	if( $vulnerabilityFile == 'medium.php' ) {
